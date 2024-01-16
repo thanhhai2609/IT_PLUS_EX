@@ -179,26 +179,26 @@ public class main {
 							case 3:{
 								//1 1 2 3 5 8
 								int n = 20;
-						        int a = 0;
-						        int b = 1;
-						        System.out.println("20 số đầu tiên của dãy Fib là:");
-						        System.out.print(a + " " + b + " ");
-						        for (int i = 2; i < n; i++) {
-						            int next = a + b;
-						            System.out.print(next + " ");
-						            a = b;
-						            b = next;}
-								break;
+							        int a = 0;
+							        int b = 1;
+							        System.out.println("20 số đầu tiên của dãy Fib là:");
+							        System.out.print(a + " " + b + " ");
+							        for (int i = 2; i < n; i++) {
+							            int next = a + b;
+							            System.out.print(next + " ");
+							            a = b;
+							            b = next;}
+									break;
 							}
 							case 4:{
-						        System.out.print("Nhập số tiền gửi (VND): ");
-						        double principal = sc.nextDouble();
-						        System.out.print("Nhập lãi suất hàng tháng (dưới dạng thập phân, ví dụ: 0.05 cho 5%): ");
-						        double rate = sc.nextDouble();
-						        System.out.print("Nhập số tháng gửi: ");
-						        int months = sc.nextInt();
-						        double compoundInterest = principal * Math.pow(1 + rate, months);
-						        System.out.printf("Tổng số tiền sau %d tháng là: %.2f VND%n", months, compoundInterest);
+							        System.out.print("Nhập số tiền gửi (VND): ");
+							        double principal = sc.nextDouble();
+							        System.out.print("Nhập lãi suất hàng tháng (dưới dạng thập phân, ví dụ: 0.05 cho 5%): ");
+							        double rate = sc.nextDouble();
+							        System.out.print("Nhập số tháng gửi: ");
+							        int months = sc.nextInt();
+							        double compoundInterest = principal * Math.pow(1 + rate, months);
+							        System.out.printf("Tổng số tiền sau %d tháng là: %.2f VND%n", months, compoundInterest);
 								break;
 							}
 							case 5:{
@@ -218,30 +218,30 @@ public class main {
 							case 6:{
 								Boolean test = false;
 								Random random = new Random();
-						        System.out.print("Nhập số đầu tiên: ");
-						        int minNumber = sc.nextInt();
-						        System.out.print("Nhập số thứ hai: ");
-						        int maxNumber = sc.nextInt();
-						        int randomNumber = random.nextInt((maxNumber - minNumber) + 1) + minNumber;
-						        for (int i = 0; i < 3; i++) {
-						            System.out.print("Nhập dự đoán của bạn: ");
-						            int guess = sc.nextInt();
-						            if (guess < randomNumber) {
-						                System.out.println("Tăng lên");
-						                test = false;
-						            } else if (guess > randomNumber) {
-						                System.out.println("Giảm xuống");
-						                test = false;
-						            } else {
-						                System.out.println("Bạn đã thắng!"); 
-						                test = true;
-						                break;
-						            }
-						        }
-						        if (test == false) {
-						        	System.out.println("Bạn đã thua. Số đúng là: " + randomNumber);
-						        }
-						        break;
+							        System.out.print("Nhập số đầu tiên: ");
+							        int minNumber = sc.nextInt();
+							        System.out.print("Nhập số thứ hai: ");
+							        int maxNumber = sc.nextInt();
+							        int randomNumber = random.nextInt((maxNumber - minNumber) + 1) + minNumber;
+							        for (int i = 0; i < 3; i++) {
+							            System.out.print("Nhập dự đoán của bạn: ");
+							            int guess = sc.nextInt();
+							            if (guess < randomNumber) {
+							                System.out.println("Tăng lên");
+							                test = false;
+							            } else if (guess > randomNumber) {
+							                System.out.println("Giảm xuống");
+							                test = false;
+							            } else {
+							                System.out.println("Bạn đã thắng!"); 
+							                test = true;
+							                break;
+							            }
+							        }
+							        if (test == false) {
+							        	System.out.println("Bạn đã thua. Số đúng là: " + randomNumber);
+							        }
+							        break;
 							}
 							default:
 								throw new IllegalArgumentException("Unexpected value: " + bt_2);
